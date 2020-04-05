@@ -1,0 +1,15 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "fix: eslint ./src -- fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arkhipenka/virtual-keyboard.git"
+  },
+  "author": "Arkhipenka Andrei",
+  "license": "ISC",
+  "description": ""
+}
