@@ -1,11 +1,11 @@
-import Button from "./button.js";
+import Button from './button.js';
 
 class ButtonAlternative extends Button {
   constructor(
-    text = { en: "a", ru: "а" },
-    lang = "en",
-    altText = { en: "A", ru: "А" },
-    code = "KeyA"
+    text = { en: 'a', ru: 'а' },
+    lang = 'en',
+    altText = { en: 'A', ru: 'А' },
+    code = 'KeyA',
   ) {
     super(text, lang, altText, code);
     this.shifted = false;
@@ -14,11 +14,11 @@ class ButtonAlternative extends Button {
   shift() {
     [this.text, this.altText] = [this.altText, this.text];
     this.changeText();
-    this.node.classList.toggle("shift");
+    this.node.classList.toggle('shift');
   }
 
   caps() {
-    this.node.classList.toggle("shift");
+    this.node.classList.toggle('shift');
   }
 }
 

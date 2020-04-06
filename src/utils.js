@@ -1,23 +1,23 @@
 function isCaps(code) {
-  return code === "CapsLock";
+  return code === 'CapsLock';
 }
 
 function isShift(code) {
-  return ["Shift", "ShiftLeft", "ShiftRight"].includes(code);
+  return ['Shift', 'ShiftLeft', 'ShiftRight'].includes(code);
 }
 
 function isCtrl(code) {
-  return ["ControlLeft", "ControlRight"].includes(code);
+  return ['ControlLeft', 'ControlRight'].includes(code);
 }
 
 function isArrow(code) {
-  return ["ArrowUp", "ArrowLeft", "ArrowDown", "ArrowRight"].includes(code);
+  return ['ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowRight'].includes(code);
 }
 
 function runOnKeys(func, ...combinations) {
   const pressed = new Set();
 
-  document.addEventListener("keydown", (event) => {
+  document.addEventListener('keydown', (event) => {
     pressed.add(event.code);
 
     for (const combination of combinations) {
@@ -28,7 +28,7 @@ function runOnKeys(func, ...combinations) {
     }
   });
 
-  document.addEventListener("keyup", (event) => {
+  document.addEventListener('keyup', (event) => {
     pressed.delete(event.code);
   });
 }

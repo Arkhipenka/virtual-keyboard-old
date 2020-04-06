@@ -1,9 +1,9 @@
 class button {
   constructor(
-    text = { en: "a", ru: "а" },
-    lang = "en",
-    altText = { en: "A", ru: "А" },
-    code = "KeyA"
+    text = { en: 'a', ru: 'а' },
+    lang = 'en',
+    altText = { en: 'A', ru: 'А' },
+    code = 'KeyA',
   ) {
     this.node = null;
     this.text = text;
@@ -13,8 +13,8 @@ class button {
   }
 
   init() {
-    this.node = document.createElement("button");
-    this.node.classList.add("key");
+    this.node = document.createElement('button');
+    this.node.classList.add('key');
     this.node.dataset.button = this.text.en;
 
     this.changeText();
@@ -30,11 +30,11 @@ class button {
   }
 
   shift() {
-    this.node.classList.remove("shift");
+    this.node.classList.remove('shift');
   }
 
   caps() {
-    this.node.classList.remove("shift");
+    this.node.classList.remove('shift');
   }
 }
 
