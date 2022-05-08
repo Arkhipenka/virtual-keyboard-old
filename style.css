@@ -1,104 +1,83 @@
 body {
-    margin: 0;
-    padding: auto;
-  }
-  main{
-      margin: 0 auto;
-  }
-  form {
-    width: 850px;
-    height: 200px;
-    box-sizing: border-box;
-    padding: 10px 10px 0px;
-    overflow: hidden;
-  }
-  textarea {
-    width: 830px;
-    height: 100%;
-    box-sizing: border-box;
-  }
-  .keyboard {
-    display: grid;
-    grid-template-columns: 830px;
-    grid-template-rows: repeat(5, 50px);
-    grid-gap: 5px;
-    padding: 10px;
-    height: 290px;
-    width: 850px;
-    box-sizing: border-box;
-  }
-  .keyRow:nth-child(1) {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 115px;
-    grid-template-rows: 50px;
-    grid-gap: 5px;
-  }
-  .keyRow:nth-child(2) {
-    display: grid;
-    grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-gap: 5px;
-  }
-  .keyRow:nth-child(3) {
-    display: grid;
-    grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
-    grid-template-rows: 50px;
-    grid-gap: 5px;
-  }
-  .keyRow:nth-child(4) {
-    display: grid;
-    grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
-    grid-template-rows: 50px;
-    grid-gap: 5px;
-  }
-  .keyRow:nth-child(5) {
-    display: grid;
-    grid-template-columns: 100px 50px 50px 350px 50px 50px 50px 45px 45px;
-    grid-template-rows: 50px;
-    grid-gap: 5px;
-  }
-  .key {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: dimgray;
-    color: aliceblue;
-  }
-  
-  .Backspace,
-  .Tab,
-  .Delete,
-  .CapsLock,
-  .Enter,
-  .ShiftLeft,
-  .ArrowUp,
-  .ShiftRight,
-  .ControlLeft,
-  .MetaLeft,
-  .AltLeft,
-  .AltRight,
-  .ControlRight,
-  .ArrowLeft,
-  .ArrowDown,
-  .ArrowRight {
-    background-color: darkslategrey;
-    color: aliceblue;
-  }
-  .key:hover {
-    background: slategrey;
-  }
-  .key.active {
-    background: slategray;
-  }
-  .key span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
+  margin: 0;
+  padding: auto;
+}
+main {
+  width: 850px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+textarea {
+  width: 830px;
+  height: 200px;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+.keyboard {
+  display: grid;
+  grid-template-columns: 830px;
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 5px;
+  padding: 10px;
+  height: 290px;
+  width: 850px;
+  box-sizing: border-box;
+}
+.keyRow:nth-child(1) {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 115px;
+  grid-template-rows: 50px;
+  grid-gap: 5px;
 
+}
+.keyRow:nth-child(2) {
+  display: grid;
+  grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-gap: 5px;
+ 
+}
+.keyRow:nth-child(3) {
+  display: grid;
+  grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
+  grid-template-rows: 50px;
+  grid-gap: 5px;
+
+}
+.keyRow:nth-child(4) {
+  display: grid;
+  grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
+  grid-template-rows: 50px;
+  grid-gap: 5px;
   
+}
+.keyRow:nth-child(5) {
+  display: grid;
+  grid-template-columns: 100px 50px 50px 350px 50px 50px 50px 45px 45px;
+  grid-template-rows: 50px;
+  grid-gap: 5px;
+}
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: dimgray;
+  color: aliceblue;
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+
+.key:hover {
+  background: slategrey;
+  box-shadow: 5px 5px 5px 5px #7c1d96;
+}
+.active {
+  background: slategray;
+  transition: background-color 0.5s;
+}
+
+.shift {
+  text-transform: uppercase;
+}
