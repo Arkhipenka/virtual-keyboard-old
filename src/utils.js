@@ -33,4 +33,5 @@ function runOnKeys(func, ...combinations) {
   });
 }
 
+
 export { isCaps, isShift, runOnKeys, isArrow, isCtrl };

@@ -1,4 +1,5 @@
 class button {
+
     constructor(
       text = { en: 'a', ru: 'а' },
       lang = 'en',
@@ -39,4 +40,5 @@ class button {
   }
   
   export default button;
-  
+
+
