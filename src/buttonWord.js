@@ -19,4 +19,6 @@ class buttonWord extends button {
   }
 }
 
+
 export default buttonWord;
+

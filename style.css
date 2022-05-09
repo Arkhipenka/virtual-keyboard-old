@@ -28,27 +28,23 @@ textarea {
   grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 115px;
   grid-template-rows: 50px;
   grid-gap: 5px;
-
 }
 .keyRow:nth-child(2) {
   display: grid;
   grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
   grid-gap: 5px;
- 
 }
 .keyRow:nth-child(3) {
   display: grid;
   grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
   grid-template-rows: 50px;
   grid-gap: 5px;
-
 }
 .keyRow:nth-child(4) {
   display: grid;
   grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 95px;
   grid-template-rows: 50px;
   grid-gap: 5px;
-  
 }
 .keyRow:nth-child(5) {
   display: grid;
@@ -82,3 +78,4 @@ textarea {
 .shift {
   text-transform: uppercase;
 }
+
