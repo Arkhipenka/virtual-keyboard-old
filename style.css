@@ -71,11 +71,12 @@ textarea {
 
 .key:hover {
   background: slategrey;
-  box-shadow: 5px 5px 5px 5px #7c1d96;
+  box-shadow: 1px 1px 6px 4px #7c1d96;
 }
 .active {
   background: slategray;
   transition: background-color 0.5s;
+  box-shadow: 1px 1px 6px 4px #7c1d96;
 }
 
 .shift {
