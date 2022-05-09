@@ -359,4 +359,6 @@ function createButton(text, lang, altText, type, code) {
 window.onload = () => {
   const keyboard = new Keyboard();
   keyboard.init();
+
 };
+

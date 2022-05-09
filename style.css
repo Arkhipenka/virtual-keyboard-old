@@ -62,10 +62,12 @@ textarea {
   background: dimgray;
   color: aliceblue;
   transition: background-color 0.5s;
+  border-radius: 5px;
 }
 
 .key:hover {
   background: slategrey;
+  box-shadow: 5px 5px 5px 5px #7c1d96;
 }
 .active {
   background: slategray;
@@ -75,3 +77,4 @@ textarea {
 .shift {
   text-transform: uppercase;
 }
+

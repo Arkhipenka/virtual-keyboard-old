@@ -22,4 +22,6 @@ class ButtonAlternative extends Button {
   }
 }
 
+
 export default ButtonAlternative;
+
